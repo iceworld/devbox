@@ -1,11 +1,11 @@
 ---
 # build-servers.yml
-- hosts: devbox
+- hosts: 10.10.20.20
   #Define user and password variables
   vars:
     # created with:
     # python -c 'import crypt; print crypt.crypt("guest123", "guest")'
-    password : deZglJ0UD./IQ
+    password : cisco123
     user : devbox
   roles:
     - users
@@ -15,6 +15,3 @@
     - python
     - drone-cli
     - pycharm
-#  environment:
-#    http_proxy: http://proxy-rtp-1.cisco.com:8080
-#    https_proxy: http://proxy-rtp-1.cisco.com:8080

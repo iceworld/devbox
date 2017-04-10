@@ -3,7 +3,7 @@
 
 general:
   user: devbox
-  timezone: America/Los_Angeles
+  timezone: Europe/London
 
 nvm:
   user: "{{ general.user }}"
